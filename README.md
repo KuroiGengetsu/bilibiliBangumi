@@ -17,13 +17,18 @@ then you are ready to go!
 
 ## prerequisites:
 python3 (tested on python 3.5)
+
 you-get
+
 requests
 
 ## usage:
 git clone https://github.com/hyperVX/bilibiliBangumi.git
+
 cd bilibiliBangumi
+
 python3 bilibiliBangumiDownloader.py [serial] [subForder]
+
 
 > good hacking!
 
