@@ -27,8 +27,8 @@ class bilibiliAnime:
         data = Parse(self.serial)
         index = data.count()
         for src in data.key_url():
-            # sys.argv = ['you-get', '--debug', '--no-caption', src]
-            sys.argv = ['you-get', '--info', src]
+            sys.argv = ['you-get', '--debug', '--no-caption', src]
+            # sys.argv = ['you-get', '--info', src]
             if not os.path.exists(str(index)):
                 os.makedirs(str(index))
             os.chdir(str(index))
@@ -47,8 +47,8 @@ class bilibiliAnime:
 
 
 if __name__ == '__main__':
-    serial = '3461'
-    name = 'RE0'
+    serial = sys.argv[1]
+    name = sys.argv[2]
 
     directory = os.path.expanduser('~') + '\\Videos'
     bilibiliAnime(serial, name, directory).start()
