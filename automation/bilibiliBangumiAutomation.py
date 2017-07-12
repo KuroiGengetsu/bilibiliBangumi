@@ -11,7 +11,7 @@ class Parse:
     def __init__(self, serial):
         self.serial = serial
         self.url = 'http://bangumi.bilibili.com/jsonp/seasoninfo/' + serial + '.ver'
-        self.json = eval(requests.get(self.url, headers=self.headers).text[19: -2])
+        self.json = eval(requests.get(self.url, headers=self.headers).text[19: -2]+'}')
 
     def dump_json(self):
         if not os.path.exists(r'json'):
