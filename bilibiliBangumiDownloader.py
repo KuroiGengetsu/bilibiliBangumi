@@ -27,7 +27,7 @@ class bilibiliAnime:
         data = Parse(self.serial)
         index = data.count()
         for src in data.key_url():
-            sys.argv = ['you-get', '--debug', '--no-caption', src]
+            sys.argv = ['you-get', '--no-caption', src]
             # sys.argv = ['you-get', '--info', src]
             if not os.path.exists(str(index)):
                 os.makedirs(str(index))
