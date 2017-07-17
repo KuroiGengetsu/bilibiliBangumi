@@ -1,26 +1,21 @@
 # bilibiliBangumi
-download animations bangumi video sets from bilibili.com 
-AUTOMATICALLY!!!!!!!!!!
+Download animations bangumi video sets from bilibili.com automatically.
 
-## descriptions
+## Descriptions
 
-specify serial which you can gey by accessing http://bangumi.bilibili.com/anime/index
+Specify serial which you can gey by accessing http://bangumi.bilibili.com/anime/index, then select your favourite one and get the serial.
 
-then select your favourite one and get the serial
+e.g. http://bangumi.bilibili.com/anime/3461
 
-for example: http://bangumi.bilibili.com/anime/3461
+The serial is 3461.
 
-that's "RE0"
+Specify the name which is the subfolder that downloaded to your %home%/videos/
 
-so the serial is 3461
+Run command ``` python3 bilibiliBangumiDownloader.py [serial] [subForder] ```
 
-specify the serial
+You are ready to go.
 
-specify the name which is the subfolder that downloaded to your %home%/videos/
-
-run command ``` $ python3 bilibiliBangumiDownloader.py [serial] [subForder] ```
-
-YOU ARE READY TO GO!
+> Not very often but it happens, the download process can not be initialized or download process can fail.. .Try again or try another time, maybe five minutes later. You'll find it work again, and continuing downloading from where it paused.
 
 ## prerequisites:
 python3 (tested on python 3.5)
@@ -29,10 +24,9 @@ you-get
 
 requests
 
-use 
-"pip3 install --upgrade you-get"
+```pip3 install --upgrade you-get```
 
-"pip3 install --upgrade requests"
+```pip3 install --upgrade requests```
 
 to install dependencies.
 
