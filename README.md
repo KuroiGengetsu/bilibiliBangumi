@@ -14,9 +14,11 @@ that's "RE0"
 
 so the serial is 3461
 
-specify the serial in bilibiliBangumiDownloader.py
+specify the serial
 
 specify the name which is the subfolder that downloaded to your %home%/videos/
+
+run command ``` $ python3 bilibiliBangumiDownloader.py [serial] [subForder] ```
 
 YOU ARE READY TO GO!
 
