@@ -10,7 +10,8 @@ class Parse:
 
     def __init__(self, serial):
         self.serial = serial
-        self.url = 'http://bangumi.bilibili.com/jsonp/seasoninfo/' + serial + '.ver'
+        self.url = 'http://bangumi.bilibili.com/jsonp/seasoninfo/' + serial + '.ver?callback=seasonListCallback&jsonp=jsonp'
+        # https://bangumi.bilibili.com/jsonp/seasoninfo/2588.ver
         self.json = eval(requests.get(self.url, headers=self.headers).text[19: -2])
 
     def dump_json(self):

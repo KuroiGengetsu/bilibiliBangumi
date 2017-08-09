@@ -2,8 +2,6 @@ import os
 import sys
 import time
 
-from you_get import common as you_get
-
 from automation.bilibiliBangumiAutomation import Parse
 
 
@@ -27,17 +25,19 @@ class bilibiliAnime:
         data = Parse(self.serial)
         index = data.count()
         for src in data.key_url():
-            sys.argv = ['you-get', '--no-caption', src]
+            # sys.argv = ['you-get', '--no-caption', src]
             # sys.argv = ['you-get', '--info', src]
             if not os.path.exists(str(index)):
                 os.makedirs(str(index))
             os.chdir(str(index))
             try:
-                you_get.main()
+                # you_get.main()
+                os.system("you-get --no-caption " + src)
             except:
                 print("Exception, pending for 100 seconds")
                 time.sleep(100)
-                you_get.main()
+                # you_get.main()
+                os.system("you-get --no-caption " + src)
             os.chdir('..')
             index -= 1
 
